@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PageViewUI extends StatefulWidget {
@@ -15,22 +16,22 @@ class _PageViewUIState extends State<PageViewUI> {
         title: Text(
           'PageView Test',
         ),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
       ),
       body: PageView(
-        children: [
+        children: <Widget>[
           Container(
             color: Colors.red,
-            margin: EdgeInsets.all(10),
-          ),
-          Container(
-            color: Colors.blue,
             margin: EdgeInsets.all(10),
           ),
           Container(
             color: Colors.green,
             margin: EdgeInsets.all(10),
           ),
+          Container(
+            color: Colors.blue,
+            margin: EdgeInsets.all(10),
+          )
         ],
       ),
     );

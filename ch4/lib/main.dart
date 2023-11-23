@@ -1,13 +1,13 @@
+import 'package:ch4/PuzzleUI.dart';
 import 'package:flutter/material.dart';
-
-import 'BottomNavigationTest.dart';
-import 'ButtonTest.dart';
-import 'CenterTest.dart';
 import 'ContainerTest.dart';
-import 'PageViewUI.dart';
 import 'StackTest.dart';
-import 'PuzzleUI.dart';
+import 'PageViewUI.dart';
 import 'TabBarTest.dart';
+import 'BottomNavigationBarTest.dart';
+import 'CenterTest.dart';
+import 'ButtonTest.dart';
+import 'Stack_.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,8 +24,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      //home: const ContainerTest(),
       home: ButtonTest(),
     );
   }
 }
+
+
 

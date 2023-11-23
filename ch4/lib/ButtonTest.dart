@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ButtonTest extends StatefulWidget {
@@ -10,22 +11,18 @@ class ButtonTest extends StatefulWidget {
 class _ButtonTestState extends State<ButtonTest> {
   @override
   Widget build(BuildContext context) {
-    Scaffold s = Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text('Button Test'),
         backgroundColor: Colors.deepPurple,
       ),
       body: CircleAvatar(
         child: Icon(Icons.person),
-      ),
+      )
     );
-
-    return s;
   }
 
-  void MyPressed(){
-    setState(() {
+  void Test(){
 
-    });
   }
 }

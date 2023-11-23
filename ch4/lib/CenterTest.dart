@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CenterTest extends StatefulWidget {
@@ -12,18 +13,18 @@ class _CenterTestState extends State<CenterTest> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Expended Test"),
-        backgroundColor: Colors.deepPurple,
+        title: Text('Expended Test'),
+        backgroundColor: Colors.deepPurple
       ),
       body: Center(
         child: Card(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.0),
+            borderRadius: BorderRadius.circular(16.0),
           ),
           elevation: 10,
           child: Container(
             color: Colors.red,
-            width: 100,
+            width: 200,
             height: 200,
           ),
         ),
